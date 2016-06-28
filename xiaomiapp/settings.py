@@ -24,7 +24,7 @@ ITEM_PIPELINES = { # tell scrapy we have a pipeline called appstore pipeline
 MONGODB_SERVER = "localhost"
 MONGODB_PORT = 27017
 MONGODB_DB = "xiaomi"
-MONGODB_COLLECTION = "test2"
+MONGODB_COLLECTION = "test3"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'xiaomiapp (+http://www.yourdomain.com)'

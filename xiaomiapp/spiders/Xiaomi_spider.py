@@ -1,9 +1,8 @@
 import scrapy
 import re
+import urllib
 from scrapy.selector import Selector
 from xiaomiapp.items import XiaomiappItem
-#from scrapy.spiders import Rule,CrawlSpider
-#from scrapy.linkextractors import LinkExtractor
 from urlparse import urljoin
 
 
@@ -27,10 +26,40 @@ class XiaomiSpider(scrapy.Spider):
             fullurl = urljoin(response.url, url)
             yield scrapy.Request(fullurl, callback=self.parse_categories, dont_filter=True)
 
+    def find_next_page(self,url):
+        try:
+            page_num_str = url.split('/')[-1]
+            page_num = int(page_num_str)+1
+            #Limit the number of pages crawl for testing
+            if page_num > 2:
+                return None
+
+            url = url[:-len(page_num_str)] + str(page_num)
+            return url;
+        except ValueError:
+            print "### next page url cannot be handled"
+            print url
+            return None
+
     def parse_categories(self, response):
         page = Selector(response)
+        params = urllib.urlencode({'page': '0'})
+        url = response.url
+        url1 = url + '#' + params
+        while url:
+            yield scrapy.Request(url1, self.parse_apps, meta={
+                'splash':{
+                    'endpoint':"render,html",
+                    'args':{'wait':0.1}
+                }
+            },dont_filter=True)
+        url1 = self.find_next_page(url1)
+
+    def parse_apps(self,response):
+        page = Selector(response)
         divs = page.xpath(
-            '//ul[@id = "all-applist"][@class = "applist"]/li')  # this is the main block in html for all the contents we want to crawl
+            '//ul[@id = "all-applist"][@class = "applist"]/li'
+        )  # this is the main block in html for all the contents we want to crawl
 
         for div in divs:
             item = XiaomiappItem() # this is defined in item.py file
