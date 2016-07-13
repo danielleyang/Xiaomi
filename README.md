@@ -18,11 +18,11 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 We used Scrapy and MongoDB to crawl Xiaomi app store. 
 The related packages involved in this project were listed below: 
 
-  1. Scrapy Installation:  
+  a. Scrapy Installation:  
     `pip install Scrapy`  
      More about Scrapy: <http://scrapy.org>  
 
-  2. MongoDB Community Edition Installiation with Homebrew:  
+  b. MongoDB Community Edition Installiation with Homebrew:  
     * Install Homebrew  
        `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  
 
@@ -32,27 +32,27 @@ The related packages involved in this project were listed below:
        `brew install mongodb --devel`  
         More about MongoDB: <https://www.mongodb.com>  
 
-  3. Install Scrapy-Splash for Rendering JavaScript:  
+  c. Install Scrapy-Splash for Rendering JavaScript:  
     `pip install scrapy-splash`  
      More about Scrapy-Splash: <https://github.com/scrapy-plugins/scrapy-splash>  
      Also you need to install docker: <https://www.docker.com/products/docker#/mac>    
 
-  4. Robomongo *optional:  
+  d. Robomongo *optional:  
      The necessary Robomongo is a good software for me to quickly view the data which is uploaded through MongoDB.
      Robomongo can be downloaded here: <https://robomongo.org>
 
 ### 2. Start to crawl
-  1. Start Splash and Mongodb Server  
+  a. Start Splash and Mongodb Server  
      open terminal:  
      `mongod`  
      open another terminal:  
      `$ docker run -p 8050:8050 scrapinghub/splash`
   
-  2. Clone files  
+  b. Clone files  
 Clone files from my xiaomiapppppp REPO:   
 `git clone https://github.com/jenny91515/xiaomiapppppp.git`
   
-  3. Modify the files under settings.py  
+  c. Modify the files under settings.py  
 MONGODB_COLLECTION is the name of the file on MONDODB database you want to created
 MONGODB_SERVER and MONGODB_PORT should be the same as what your MONGODB shows
 
@@ -62,7 +62,7 @@ MONGODB_SERVER and MONGODB_PORT should be the same as what your MONGODB shows
     `MONGODB_DB = "xiaomi"`  
     `MONGODB_COLLECTION = "test3"`  
   
-  4. Run crawler:  
+  d. Run crawler:  
      In another terminal window:  
      `scrapy crawl xiaomi`
 
