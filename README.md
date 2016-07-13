@@ -7,6 +7,7 @@ From 06/04/2016 to 07/02/2016
 We used a python package called Scrapy to crawl XiaoMi app store and saved our results on MongoDB database.There were about 30 categories of apps on [XiaoMi app store page](http://app.xiaomi.com). We aimed to crawl all the apps under each category and collected their titles, absolute urls, ids and their categories. This project was finished in June 2016. The information we gathered through this project could be potentionally useful for establishing search database in the future. 
 
 ## Demo
+![alt text](https://www.wunderlist.com/blog/google-play-best-apps-of-2014-featuring-yours-truly/2@2x.jpg)
 This is a demo created by our group leader [Ankai Liang](https://github.com/AnkaiLiang/-12WebCralwer). It demonstrates the crawling process when we start to execute Scrapy on the terminal.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=HVAR5syRljc
