@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7493ea11899de63f7fd040afe55bca3b691638c7
 ## xiaomiapppppp by Danyang Chen
 ![alt text](https://www.wunderlist.com/blog/google-play-best-apps-of-2014-featuring-yours-truly/2@2x.jpg)
 # When
@@ -94,7 +97,10 @@ Team Name: 12WebCralwer
 Description: this is a project using Scrapy to crawl Xiaomi app store  
 Stack: Python, MongoDB
 
+<<<<<<< HEAD
 =======
 # Web Crawler Scrapy
 ##[Proposal](Proposal.md)
 >>>>>>> 77704e8a5106c9f1908cdbb044d26c7044ce2285
+=======
+>>>>>>> 7493ea11899de63f7fd040afe55bca3b691638c7
