@@ -68,10 +68,10 @@ In another terminal window:
 `scrapy crawl xiaomi`
 
 ### 12WebCralwer TeamMembers:
-[me](https://github.com/jenny91515)
-[AnkaiLiang](https://github.com/AnkaiLiang)
-[Taran](https://github.com/songtailun)
-[Kristy Luo](https://github.com/Kristy-Luo)
+[me](https://github.com/jenny91515)  
+[AnkaiLiang](https://github.com/AnkaiLiang)  
+[Taran](https://github.com/songtailun)  
+[Kristy Luo](https://github.com/Kristy-Luo)  
 
 ### Acknowledgement:
 BigTiger
