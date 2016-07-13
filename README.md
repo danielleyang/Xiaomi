@@ -55,7 +55,6 @@ Clone files from my xiaomiapppppp REPO:
   3. Modify the files under settings.py  
 MONGODB_COLLECTION is the name of the file on MONDODB database you want to created
 MONGODB_SERVER and MONGODB_PORT should be the same as what your MONGODB shows
-
     `set up the MONGODB`  
     `MONGODB_SERVER = "localhost"`   
     `MONGODB_PORT = 27017`  
