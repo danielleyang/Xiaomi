@@ -18,39 +18,40 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 We used Scrapy and MongoDB to crawl Xiaomi app store. 
 The related packages involved in this project were listed below: 
 
-##### a. Scrapy Installation:
-pip install Scrapy
+####    a. Scrapy Installation:
+`pip install Scrapy`
 More about Scrapy: <http://scrapy.org>
 
-##### b. MongoDB Community Edition Installiation with Homebrew:
-1.Install Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-2.Install MongoDB
-brew install mongodb
-brew install mongodb --with-openssl
-brew install mongodb --devel
+####    b. MongoDB Community Edition Installiation with Homebrew:
+1. Install Homebrew
+`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+
+2. Install MongoDB
+`brew install mongodb`
+`brew install mongodb --with-openssl`
+`brew install mongodb --devel`
 More about MongoDB: <https://www.mongodb.com>
 
-##### c.Install Scrapy-Splash for Rendering JavaScript:
-pip install scrapy-splash
+####    c.Install Scrapy-Splash for Rendering JavaScript:
+`pip install scrapy-splash`
 More about Scrapy-Splash: <https://github.com/scrapy-plugins/scrapy-splash>
 Also you need to install docker: <https://www.docker.com/products/docker#/mac>
 
-##### d. Robomongo *optional
+####    d. Robomongo *optional
 The necessary Robomongo is a good software for me to quickly view the data which is uploaded through MongoDB.
 Robomongo can be downloaded here: <https://robomongo.org>
 
 #### 2. Start to crawl
-##### a. Start Splash and Mongodb Server
+#### a. Start Splash and Mongodb Server
 open terminal:
-mongod 
+`mongod`
 
 open another terminal:
-$ docker run -p 8050:8050 scrapinghub/splash
+`$ docker run -p 8050:8050 scrapinghub/splash`
 
 ##### b. Clone files
 Clone files from my xiaomiapppppp REPO: 
-git clone https://github.com/jenny91515/xiaomiapppppp.git
+`git clone https://github.com/jenny91515/xiaomiapppppp.git`
 
 ##### c. Modify the files under settings.py
 MONGODB_COLLECTION is the name of the file on MONDODB database you want to created
@@ -64,7 +65,7 @@ MONGODB_COLLECTION = "test3"
 
 ##### d. Run crawler:
 In another terminal window:
-scrapy crawl xiaomi
+`scrapy crawl xiaomi`
 
 ### 12WebCralwer TeamMembers:
 [me](https://github.com/jenny91515)
