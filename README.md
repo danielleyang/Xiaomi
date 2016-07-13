@@ -52,7 +52,7 @@ The related packages involved in this project were listed below:
   
   2. Clone Files  
 Clone files from my xiaomiapppppp REPO:   
-`git clone https://github.com/jenny91515/xiaomiapppppp.git`
+`git clone https://github.com/jenny91515/Xiaomi.git`
   
   3. Modify the Files under Settings.py  
 MONGODB_COLLECTION is the name of the file on MONDODB database you want to created
