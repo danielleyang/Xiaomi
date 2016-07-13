@@ -54,7 +54,7 @@ Clone files from my xiaomiapppppp REPO:
   
   3. Modify the files under settings.py  
 MONGODB_COLLECTION is the name of the file on MONDODB database you want to created
-MONGODB_SERVER and MONGODB_PORT should be the same as what your MONGODB shows
+MONGODB_SERVER and MONGODB_PORT should be the same as what your MONGODB shows  
     `set up the MONGODB`  
     `MONGODB_SERVER = "localhost"`   
     `MONGODB_PORT = 27017`  
@@ -90,5 +90,5 @@ jamesyx
 Category: full stack  
 Team Name: 12WebCralwer  
 Description: this is a project using Scrapy to crawl Xiaomi app store  
-Stack:Python, MongoDB
+Stack: Python, MongoDB
 
