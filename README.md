@@ -26,14 +26,16 @@ More about Scrapy: <http://scrapy.org>
 1. Install Homebrew  
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  
 
-2. Install MongoDB
+2. Install MongoDB  
 `brew install mongodb`  
 `brew install mongodb --with-openssl`  
 `brew install mongodb --devel`  
+  
 More about MongoDB: <https://www.mongodb.com>  
 
 ####    c.Install Scrapy-Splash for Rendering JavaScript:
 `pip install scrapy-splash`  
+  
 More about Scrapy-Splash: <https://github.com/scrapy-plugins/scrapy-splash>  
 Also you need to install docker: <https://www.docker.com/products/docker#/mac>  
 
@@ -49,10 +51,12 @@ open terminal:
 open another terminal:  
 `$ docker run -p 8050:8050 scrapinghub/splash`
 
+  
 #### b. Clone files
 Clone files from my xiaomiapppppp REPO:   
 `git clone https://github.com/jenny91515/xiaomiapppppp.git`
 
+  
 #### c. Modify the files under settings.py
 MONGODB_COLLECTION is the name of the file on MONDODB database you want to created
 MONGODB_SERVER and MONGODB_PORT should be the same as what your MONGODB shows
@@ -63,24 +67,32 @@ MONGODB_PORT = 27017
 MONGODB_DB = "xiaomi"  
 MONGODB_COLLECTION = "test3"  
 
+  
 #### d. Run crawler:
 In another terminal window:  
 `scrapy crawl xiaomi`
 
+
+  
 ### 12WebCralwer TeamMembers:
 [me](https://github.com/jenny91515)  
 [AnkaiLiang](https://github.com/AnkaiLiang)  
 [Taran](https://github.com/songtailun)  
 [Kristy Luo](https://github.com/Kristy-Luo)  
 
+
+  
 ### Acknowledgement:
 BigTiger  
 Jing Li  
 jamesyx  
+  
+  
 
 ### License:
 [License](https://github.com/AnkaiLiang/-12WebCralwer/blob/master/LICENSE.md)
-
+  
+  
 ### Project information
 Category: full stack  
 Team Name: 12WebCralwer  
