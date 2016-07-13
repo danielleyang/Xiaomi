@@ -18,7 +18,7 @@ We used Scrapy and MongoDB to crawl Xiaomi app store.
 The related packages involved in this project were listed below: 
 
 ##### a. Scrapy Installation:
-..*pip install Scrapy
+⋅⋅*pip install Scrapy
 More about Scrapy: <http://scrapy.org>
 
 ##### b. MongoDB Community Edition Installiation with Homebrew:
