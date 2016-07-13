@@ -41,18 +41,18 @@ The related packages involved in this project were listed below:
      The necessary Robomongo is a good software for me to quickly view the data which is uploaded through MongoDB.
      Robomongo can be downloaded here: <https://robomongo.org>
 
-### B. Start to crawl
+### B. Start to Crawl
   1. Start Splash and Mongodb Server  
      open terminal:  
      `mongod`  
      open another terminal:  
      `$ docker run -p 8050:8050 scrapinghub/splash`
   
-  2. Clone files  
+  2. Clone Files  
 Clone files from my xiaomiapppppp REPO:   
 `git clone https://github.com/jenny91515/xiaomiapppppp.git`
   
-  3. Modify the files under settings.py  
+  3. Modify the Files under Settings.py  
 MONGODB_COLLECTION is the name of the file on MONDODB database you want to created
 MONGODB_SERVER and MONGODB_PORT should be the same as what your MONGODB shows  
     `set up the MONGODB`  
@@ -61,7 +61,7 @@ MONGODB_SERVER and MONGODB_PORT should be the same as what your MONGODB shows
     `MONGODB_DB = "xiaomi"`  
     `MONGODB_COLLECTION = "test3"`  
   
-  4. Run crawler:  
+  4. Run Crawler:  
      In another terminal window:  
      `scrapy crawl xiaomi`
 
@@ -86,7 +86,7 @@ jamesyx
 [License](https://github.com/AnkaiLiang/-12WebCralwer/blob/master/LICENSE.md)
   
   
-## Project information
+## Project Information
 Category: full stack  
 Team Name: 12WebCralwer  
 Description: this is a project using Scrapy to crawl Xiaomi app store  
