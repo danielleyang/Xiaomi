@@ -45,7 +45,6 @@ The related packages involved in this project were listed below:
   1. Start Splash and Mongodb Server  
      open terminal:  
      `mongod`
-
      open another terminal:  
      `$ docker run -p 8050:8050 scrapinghub/splash`
   
@@ -57,8 +56,8 @@ Clone files from my xiaomiapppppp REPO:
 MONGODB_COLLECTION is the name of the file on MONDODB database you want to created
 MONGODB_SERVER and MONGODB_PORT should be the same as what your MONGODB shows
 
-     `set up the MONGODB
-      MONGODB_SERVER = "localhost"
+     `set up the MONGODB  
+      MONGODB_SERVER = "localhost"  
       MONGODB_PORT = 27017  
       MONGODB_DB = "xiaomi"  
       MONGODB_COLLECTION = "test3"`  
