@@ -1,50 +1,51 @@
-### xiaomiapppppp by Danyang Chen
-## When
+## xiaomiapppppp by Danyang Chen
+# When
 From 06/04/2016 to 07/02/2016
 
-## How
-### Description
+# How
+## Description
 We used a python package called Scrapy to crawl XiaoMi app store and saved our results on MongoDB database.There were about 30 categories of apps on [XiaoMi app store page](http://app.xiaomi.com). We aimed to crawl all the apps under each category and collected their titles, absolute urls, ids and their categories. This project was finished in June 2016. The information we gathered through this project could be potentionally useful for establishing search database in the future. 
 
-### Demo
+## Demo
 This is a demo created by our group leader [Ankai Liang](https://github.com/AnkaiLiang/-12WebCralwer). It demonstrates the crawling process when we start to execute Scrapy on the terminal.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=HVAR5syRljc
 " target="_blank"><img src="http://img.youtube.com/vi/HVAR5syRljc/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
-### Usage
-#### 1. Install Packages 
+## Usage
+### 1. Install Packages:
 We used Scrapy and MongoDB to crawl Xiaomi app store. 
 The related packages involved in this project were listed below: 
 
-####    a. Scrapy Installation:
-`pip install Scrapy`  
-More about Scrapy: <http://scrapy.org>  
-
-####    b. MongoDB Community Edition Installiation with Homebrew:
-1. Install Homebrew  
-`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  
-
-2. Install MongoDB  
-`brew install mongodb`  
-`brew install mongodb --with-openssl`  
-`brew install mongodb --devel`  
+  1.Scrapy Installation:
+    `pip install Scrapy`  
   
-More about MongoDB: <https://www.mongodb.com>  
+     More about Scrapy: <http://scrapy.org>  
 
-####    c.Install Scrapy-Splash for Rendering JavaScript:
-`pip install scrapy-splash`  
+  2.MongoDB Community Edition Installiation with Homebrew:
+    * Install Homebrew  
+       `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  
+
+    * Install MongoDB  
+       `brew install mongodb`  
+       `brew install mongodb --with-openssl`  
+       `brew install mongodb --devel`  
   
-More about Scrapy-Splash: <https://github.com/scrapy-plugins/scrapy-splash>  
-Also you need to install docker: <https://www.docker.com/products/docker#/mac>  
+        More about MongoDB: <https://www.mongodb.com>  
 
-####    d. Robomongo *optional
-The necessary Robomongo is a good software for me to quickly view the data which is uploaded through MongoDB.
-Robomongo can be downloaded here: <https://robomongo.org>
+  3.Install Scrapy-Splash for Rendering JavaScript:
+    `pip install scrapy-splash`  
+  
+     More about Scrapy-Splash: <https://github.com/scrapy-plugins/scrapy-splash>  
+     Also you need to install docker: <https://www.docker.com/products/docker#/mac>  
 
-#### 2. Start to crawl
-#### a. Start Splash and Mongodb Server
+  4. Robomongo *optional
+     The necessary Robomongo is a good software for me to quickly view the data which is uploaded through MongoDB.
+     Robomongo can be downloaded here: <https://robomongo.org>
+
+### 2. Start to crawl
+  1.Start Splash and Mongodb Server
 open terminal:  
 `mongod`
 
@@ -52,12 +53,12 @@ open another terminal:
 `$ docker run -p 8050:8050 scrapinghub/splash`
 
   
-#### b. Clone files
+  2.Clone files
 Clone files from my xiaomiapppppp REPO:   
 `git clone https://github.com/jenny91515/xiaomiapppppp.git`
 
   
-#### c. Modify the files under settings.py
+  3.Modify the files under settings.py
 MONGODB_COLLECTION is the name of the file on MONDODB database you want to created
 MONGODB_SERVER and MONGODB_PORT should be the same as what your MONGODB shows
 
@@ -68,13 +69,13 @@ MONGODB_DB = "xiaomi"
 MONGODB_COLLECTION = "test3"  
 
   
-#### d. Run crawler:
+  4.Run crawler:
 In another terminal window:  
 `scrapy crawl xiaomi`
 
 
   
-### 12WebCralwer TeamMembers:
+## 12WebCralwer TeamMembers:
 [me](https://github.com/jenny91515)  
 [AnkaiLiang](https://github.com/AnkaiLiang)  
 [Taran](https://github.com/songtailun)  
@@ -82,18 +83,18 @@ In another terminal window:
 
 
   
-### Acknowledgement:
+## Acknowledgement:
 BigTiger  
 Jing Li  
 jamesyx  
   
   
 
-### License:
+## License:
 [License](https://github.com/AnkaiLiang/-12WebCralwer/blob/master/LICENSE.md)
   
   
-### Project information
+## Project information
 Category: full stack  
 Team Name: 12WebCralwer  
 Description: this is a project using Scrapy to crawl Xiaomi app store  
