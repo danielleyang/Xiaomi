@@ -67,7 +67,7 @@ MONGODB_SERVER and MONGODB_PORT should be the same as what your MONGODB shows
 
 
   
-## 12WebCralwer TeamMembers:
+## 12WebCralwer TeamMembers
 [me](https://github.com/jenny91515)  
 [AnkaiLiang](https://github.com/AnkaiLiang)  
 [Taran](https://github.com/songtailun)  
@@ -75,14 +75,14 @@ MONGODB_SERVER and MONGODB_PORT should be the same as what your MONGODB shows
 
 
   
-## Acknowledgement:
+## Acknowledgement
 BigTiger  
 Jing Li  
 jamesyx  
   
   
 
-## License:
+## License
 [License](https://github.com/AnkaiLiang/-12WebCralwer/blob/master/LICENSE.md)
   
   
